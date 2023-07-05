@@ -1,0 +1,185 @@
+.line-through {
+  text-decoration: line-through;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  /* background-image: url("../public/img/wallpaper.jpeg"); */
+  /* background-image: url("https://cdn.osxdaily.com/wp-content/uploads/2012/06/default-ios-6-wallpaper.jpg"); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dock_view {
+  margin-top: 25px;
+  text-align: center;
+  background-color:  rgba(255, 247, 236, 0.345);
+}
+
+.dock_view img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.index_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  font-weight: 600;
+}
+
+.index_view {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.index_view img {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#bettery {
+  width: 35px;
+  margin-top: -15px;
+}
+/* * Calculator* */
+
+.calculator {
+  width: 350px;
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+
+.calculator form {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-auto-rows: 80px;
+  grid-gap: 5px;
+}
+
+.calculator form input {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator form input:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.calculator form .clear {
+  background-color: #ed4848;
+  grid-column: span 3;
+}
+
+.calculator form .operator {
+  background-color: orange;
+}
+
+.calculator form .dot {
+  background-color: green;
+}
+
+.calculator form input[type='text'] {
+  grid-column: span 4;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.calculator form .result {
+  grid-column: span 2;
+}
+
+/* * Calculator* */
+
+/* * Todo List* */
+.container {
+  background-color: tr;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.btn {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+input {
+  border-radius: 5px;
+  margin-right: 2px;
+}
+
+span {
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+/* *Todo List* */
+.home_button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.home_time {
+  font-size: 65px;
+  margin-top: 50px;
+  margin-bottom: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_time #date_name {
+  font-size: 20px;
+}
+
+.slide-to-unlock {
+  text-align: center;
+  width: 375px;
+  height: 120px;
+  background-color: rgba(255, 247, 236, 0.345);
+}
+
+/* * Weather */
+.weather_box {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color: rgba(255, 247, 236, 0.345);
+  padding: 3px;
+  margin: 5px;
+  width: 320px;
+  border-radius: 20px;
+}
+
+.weather_temp_text {
+  text-align: right;
+  line-height: 1;
+}
+
+#max_min {
+  font-size: 12px;
+}
+
+#weather_time{
+  font-size: 15px;
+}
